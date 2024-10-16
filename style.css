@@ -3,10 +3,21 @@
     src: url(fonts/Quicksand-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'ag';
+    src: url(fonts/Agrandir-Regular.otf);
+}
+
 *{
     margin: 0%;
     padding: 0%;
     font-family: 'qs';
+}
+
+header{
+    position: fixed;
+    margin-top: -7vh;
+    width: 100%;
 }
 
 nav{
@@ -14,14 +25,74 @@ nav{
     display: flex;
     align-items: center;
     height: 7vh;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-shadow: 0 -1vh 0 1vh rgba(0, 0, 0, 0.2);
 
 }
 
 .imgicon{   
-    width: 30%;
-    margin-left: 20%;
-    margin-top: 5px;
+    width: 15vh;
+    margin-left: 60%;
+    margin-top: 1vh;
+}
+
+.menub{
+    display: flex;
+    width: 3.5vh;
+    margin-left: 3.7vh;
+    margin-right: 0.8vh;
+}
+
+.xb{
+    display: none;
+    width: 5vh;
+    margin-left: 3vh;
+}
+
+.sb{
+    display: flex;
+    margin-left: 25%;
+    border: 0.3vh solid #dbdbdb;
+    border-radius: 1vh;
+    width: 25%;
+    height: 3.7vh;
+    align-items: center;
+    padding: 0.1vh;
+    justify-content: space-between;
+}
+
+.st{
+    background: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    margin-left: 2%;
+    width: 100%;
+    font-size: 2vh;
+}
+
+.dsbu{
+    width: 3vh;
+    margin-top: 0.7vh;
+    margin-right: 1.5vh;
+}
+
+.cm{
+    margin-left: 33%;
+    margin-top: 1vh;
+}
+
+.cm img{
+    width: 2.8vh;
+}
+
+.pf{
+    margin-top: 1vh;
+    margin-left: 3.5vh;
+}
+
+.pf img{
+    width: 3.7vh;
 }
 
 body{
@@ -31,7 +102,6 @@ body{
 a, p{
     color: white;
     text-decoration: none;
-    font-size: 25px;
 }
 
 a:hover {
@@ -42,14 +112,18 @@ a:hover {
     position: fixed;
     top: 7%;
     height: 100%;
-    width: 18%;
+    width: 38vh;
     z-index: 999;
     background-color: #1b1620;
-    border-right: 3px solid #31273b;
+    border-right: 0.5vh solid #31273b;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.menulist a,p{
+    font-size: 3.3vh;
 }
 
 .top a{
@@ -64,8 +138,8 @@ a:hover {
 .menua li{
     width: 100%;
     margin: 0;
-    margin-left: 25px;
-    margin-top: 40px;
+    margin-left: 2.5vh;
+    margin-top: 4.0vh;
     list-style: none;
 }
 
@@ -77,16 +151,141 @@ a:hover {
     align-items: center;
 }
 
-.menub{
+.row{
+    margin-bottom: -1vh;
+    margin-top: 2vh;
+    margin-left: 1vh;
+    width: 34vh;
+    height: 0vh;
+    border: 0.3vh solid #31273b;
+}
+
+.b1{
+    background-color: #1b2020;
+    height: 52vh;
+    max-width: 100%;
+    padding-top: 4vh;
+    margin-top: 7vh;
+}
+
+.ptop{
+    font-size: 4vh;
+    margin-bottom: -3vh;
+    margin-left: 5vh;
+}
+
+.imgs{
+    overflow-x: auto;
     display: flex;
-    width: 1.7%;
-    margin-left: 3.7vh;
-    margin-right: 5vh;
+    flex-flow: row nowrap;
+    padding-bottom: 5.5vh;
+    padding-right: 7vh;
 }
 
-.xb{
+.b1 a img{
+    width: 30vh;
+    margin-top: 7vh;
+    box-shadow: 0 0 3vh 2vh rgba(0, 0, 0, 0.7);
+    margin-left: 7vh;
+}
+
+.imgs a{
+    text-align: center;
+}
+
+.imgs a p{
+    font-family: 'ag';
+    font-size: 3vh;
+    margin-left: 7vh;
+    margin-top: 2vh;
+}
+
+.imgs::-webkit-scrollbar {
+    height: 1vh;
+}
+
+.imgs::-webkit-scrollbar-thumb {
+    background: #3f4141;
+    border-radius: 2vh;
+}
+
+body::-webkit-scrollbar {
+    width: 1vh;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #3f4141;
+    border-radius: 2vh;
+}
+
+.b2{
+    background-color: #1d2020;
+    width: 70%;
+    height: 100vh;
+    margin-top: 8vh;
+    margin-left: 9vh;
+    border-radius: 2vh;
+}
+
+.r1{
+    margin-top: 6vh;
+    margin-bottom: -6vh;
+    margin-left: 12vh;
+}
+
+.b2 div img{
+    width: 23vh;
+    box-shadow: 0 0 3vh 2vh rgba(0, 0, 0, 0.7);
+}
+
+.nea{
+    display: flex;
+    flex-direction: column;
+}
+
+.m1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 8vh;
+    padding-left: 8vh;
+
+}
+
+.nm{
+    color: #ffffff;
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+
+.na{
+    color: #ffffff;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+
+.nm,.na{
+    margin-left: 5vh;
+}
+
+.pbbb{
+    position: relative;
+    top: 17vh;
+    right: 24vh;
+    background-color: #3f4141;
+    width: 60vh;
+    height: 1.3vh;
+    border-radius: 2vh;
+    overflow: hidden;
+}
+
+.pr{
+    background-color: #ffffff;
+    width: 60vh;
+    height: 1.3vh;
+    border-radius: 2vh;
+    transition: width 0.1s;
+}
+
+audio {
     display: none;
-    width: 2.7%;
-    margin-left: 3vh;
 }
-

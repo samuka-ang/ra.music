@@ -14,7 +14,7 @@
         <ul class="menulist">
             <div class="menua">
                 <li><a href="#">Inicio</a></li>
-                <div class="l1"></div>
+                <div class="row"></div>
                 <li><p>Top</p></li>
             </div>
             <div class="top">
@@ -25,14 +25,20 @@
                 <li><a href="#">Mês</a></li>
             </div>
             <div class="menua">
-
-                <li><a href="#">Genero</a></li>
-                <li><a href="#">Biblioteca</a></li>
+                <div class="row"></div>
+                <li><a class="gen" href="#">Genero</a></li>]
+                <div class="row"></div>
+                <li><a class="bib" href="#">Biblioteca</a></li>
             </div>
         </ul>
-        <a href="#"><img class="imgicon" src="imgicon.png"></a>
+        <div><a href="#"><img class="imgicon" src="imgicon.png"></a></div>
+        <div class="sb">
+            <input type="text" class="st" placeholder="Pesquisa">
+            <a class="sbu" href="#"><img class="dsbu" src="icons/search.png" alt="sbu"></a>
+        </div>
+        <a class="cm" href="#"><img src="icons/createm.png" alt="cm"></a>
+        <a href="login.html" class="pf"><img src="icons/perfil.png" alt="pf"></a>
     </nav>
-    
     <script>
         function showmenu(){
             const menulist = document.querySelector('.menulist')
@@ -52,11 +58,52 @@
         }
     </script>
 </header>
-<main>
-
-</main>
-
 <body>
-    
+    <div class="b1">
+        <p class="ptop">Top  Semana (Albuns)</p>
+        <div class="imgs">
+            <a><img src="capas/c1.png" alt=""><p>HORA DO ROCK</p></a>
+            <a><img src="capas/c2.png" alt=""><p>#gigi</p></a>
+            <a><img src="capas/c3.png" alt=""><p>red cd</p></a>
+            <a><img src="capas/c4.png" alt=""><p>Twisted Nights</p></a>
+            <a><img src="capas/c5.png" alt=""><p>Naturalidade</p></a>
+            <a><img src="capas/c6.png" alt=""><p>Rush N Blues</p></a>
+            <a><img src="capas/c7.png" alt=""><p>Simulation</p></a>
+            <a><img src="capas/c8,png" alt=""><p>Penúltima De Amor</p></a>
+            <a><img src="capas/c9.png" alt=""><p>Tô De Balmain</p></a>
+            <a><img src="capas/c10.png" alt=""><p>Running Late</p></a>
+        </div>
+    </div>
+    <p class="r1">Recomendados</p>
+    <div class="b2">
+        <script>
+            const audio = document.getElementById('audio');
+            const progressBar = document.getElementById('pr');
+
+            audio.addEventListener('timeupdate', () => {
+                const percent = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = percent + '%';
+            });
+        </script>
+        <div class="m1">
+            <img src="capas/c10.png" alt="c10">
+            <audio id="audio" src="msc/02 - Champion.mp3"></audio>
+            <div class="nea">
+                <a class="nm" href="">Running Late</a>
+                <a class="na" href="">KARRAHBOOO</a>
+            </div>
+            <div class="pb">
+                <div class="pbb">
+                    <div class="pbbb">
+                        <div class="pr"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <span class="time" id="ct">00:00</span>
+                    <span class="time" id="dur">00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

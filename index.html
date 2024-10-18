@@ -39,24 +39,6 @@
         <a class="cm" href="#"><img src="icons/createm.png" alt="cm"></a>
         <a href="login.html" class="pf"><img src="icons/perfil.png" alt="pf"></a>
     </nav>
-    <script>
-        function showmenu(){
-            const menulist = document.querySelector('.menulist')
-            menulist.style.display = 'flex'
-            const xb = document.querySelector('.xb')
-            xb.style.display = 'flex'
-            const menub = document.querySelector('.menub')
-            menub.style.display = 'none'
-        }
-        function hidemenu(){
-            const menulist = document.querySelector('.menulist')
-            menulist.style.display = 'none'
-            const xb = document.querySelector('.xb')
-            xb.style.display = 'none'
-            const menub = document.querySelector('.menub')
-            menub.style.display = 'flex'
-        }
-    </script>
 </header>
 <body>
     <div class="b1">
@@ -76,33 +58,120 @@
     </div>
     <p class="r1">Recomendados</p>
     <div class="b2">
-        <script>
-            const audio = document.getElementById('audio');
-            const progressBar = document.getElementById('pr');
-
-            audio.addEventListener('timeupdate', () => {
-                const percent = (audio.currentTime / audio.duration) * 100;
-                progressBar.style.width = percent + '%';
-            });
-        </script>
         <div class="m1">
-            <img src="capas/c10.png" alt="c10">
+            <div class="img-but">
+                <img src="capas/c10.png" alt="c10">
+                <button id="play-pause" class="play-pause-button">
+                    <i class="fas fa-play"><img src="icons/play.png" alt="play"></i>
+                </button>
+            </div>
             <audio id="audio" src="msc/02 - Champion.mp3"></audio>
             <div class="nea">
                 <a class="nm" href="">Running Late</a>
                 <a class="na" href="">KARRAHBOOO</a>
             </div>
             <div class="pb">
-                <div class="pbb">
-                    <div class="pbbb">
-                        <div class="pr"></div>
-                    </div>
-                </div>
-                <div class="time">
-                    <span class="time" id="ct">00:00</span>
-                    <span class="time" id="dur">00:00</span>
+                <div class="pc" id="progress-container">
+                    <div class="pr" id="progress-bar"></div>
                 </div>
             </div>
+            <div class="time" id="current-time">00:00</div>
+            <div class="time" id="duration-time">00:00</div>
+        
+            <audio id="audio" src="02 - Champion.mp3"></audio>
+            <script src="script.js"></script>
+        </div>
+        <div class="m1">
+            <div class="img-but">
+                <img src="capas/c7.png" alt="c10">
+                <button id="play-pause" class="play-pause-button">
+                    <i class="fas fa-play"><img src="icons/play.png" alt="play"></i>
+                </button>
+            </div>
+            <audio id="audio" src="msc/02 - Champion.mp3"></audio>
+            <div class="nea">
+                <a class="nm" href="">Flower</a>
+                <a class="na" href="">Midori Jaz, Cultie</a>
+            </div>
+            <div class="pb">
+                <div class="pc" id="progress-container">
+                    <div class="pr" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="time" id="current-time">00:00</div>
+            <div class="time" id="duration-time">00:00</div>
+        
+            <audio id="audio" src="02 - Champion.mp3"></audio>
+            <script src="script.js"></script>
+        </div>
+        <div class="m1">
+            <div class="img-but">
+                <img src="capas/c8,png" alt="c10">
+                <button id="play-pause" class="play-pause-button">
+                    <i class="fas fa-play"><img src="icons/play.png" alt="play"></i>
+                </button>
+            </div>
+            <audio id="audio" src="msc/02 - Champion.mp3"></audio>
+            <div class="nea">
+                <a class="nm" href="">Penúltima De Amor</a>
+                <a class="na" href="">Plumasdecera</a>
+            </div>
+            <div class="pb">
+                <div class="pc" id="progress-container">
+                    <div class="pr" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="time" id="current-time">00:00</div>
+            <div class="time" id="duration-time">00:00</div>
+        
+            <audio id="audio" src="02 - Champion.mp3"></audio>
+            <script src="script.js"></script>
+        </div>
+        <div class="m1">
+            <div class="img-but">
+                <img src="capas/c9.png" alt="c10">
+                <button id="play-pause" class="play-pause-button">
+                    <i class="fas fa-play"><img src="icons/play.png" alt="play"></i>
+                </button>
+            </div>
+            <audio id="audio" src="msc/02 - Champion.mp3"></audio>
+            <div class="nea">
+                <a class="nm" href="">Tô De Balmain</a>
+                <a class="na" href="">Guilherme Sabino, Plumasdecera</a>
+            </div>
+            <div class="pb">
+                <div class="pc" id="progress-container">
+                    <div class="pr" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="time" id="current-time">00:00</div>
+            <div class="time" id="duration-time">00:00</div>
+        
+            <audio id="audio" src="02 - Champion.mp3"></audio>
+            <script src="script.js"></script>
+        </div>
+        <div class="m1">
+            <div class="img-but">
+                <img src="capas/c6.png" alt="c10">
+                <button id="play-pause" class="play-pause-button">
+                    <i class="fas fa-play"><img src="icons/play.png" alt="play"></i>
+                </button>
+            </div>
+            <audio id="audio" src="msc/02 - Champion.mp3"></audio>
+            <div class="nea">
+                <a class="nm" href="">LAGRIMAS</a>
+                <a class="na" href="">Big Rush, SAUKÈN</a>
+            </div>
+            <div class="pb">
+                <div class="pc" id="progress-container">
+                    <div class="pr" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="time" id="current-time">00:00</div>
+            <div class="time" id="duration-time">00:00</div>
+        
+            <audio id="audio" src="02 - Champion.mp3"></audio>
+            <script src="script.js"></script>
         </div>
     </div>
 </body>
